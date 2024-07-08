@@ -1,2 +1,2 @@
-# php-moderno
-Repositório para o Curso de PHP moderno, disponível no Curso em Vídeo
+# Projeto-Site
+Repositório do curso
