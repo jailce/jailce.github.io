@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Nivelamento Online",
+        "description": "Vuetify",
+        "imageUrl": "/p1.png",
+        "link": "https://nivelamento-online.com.br/",
+        "sections": [
+            {
+              "type": "text",
+              "title": "Título em H2",
+              "content": "Aqui vai o conteúdo adicional para explicar o projeto."
+            },
+            {
+              "type": "twoImages",
+              "images": [
+                "/path/to/image1.jpg",
+                "/path/to/image2.jpg"
+              ]
+            },
+            {
+              "type": "centeredImage",
+              "image": "/path/to/image3.jpg"
+            },
+            {
+              "type": "text",
+              "title": "Outro Título em H2",
+              "content": "Outro bloco de texto explicativo."
+            }
+          ]
+    },
+    {
+        "id": 2,
+        "title": "Calculadora de Investimento",
+        "description": "React.JS",
+        "imageUrl": "p2.png",
+        "link": "/projeto/calculadora-investimento"
+    },
+    {
+        "id": 3,
+        "title": "WNT Gestora Financeira",
+        "description": "Design System",
+        "imageUrl": "p2.png",
+        "link": "/projeto/wnt-gestora"
+    },
+    {
+        "id": 4,
+        "title": "Design White Label",
+        "description": "Figma",
+        "imageUrl": "p4.png",
+        "link": "/projeto/design-white-label"
+    },
+    {
+        "id": 5,
+        "title": "Simulado CPA-20",
+        "description": "React.JS",
+        "imageUrl": "p2.png",
+        "link": "/projeto/simulado-cpa-20"
+    },
+    {
+        "id": 6,
+        "title": "Quiz com Ranking",
+        "description": "React.JS",
+        "imageUrl": "p2.png",
+        "link": "/projeto/quiz-ranking"
+    }
+    
+]
