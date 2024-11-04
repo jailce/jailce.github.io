@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import {
   Title,
   Container,
+  Stack,
   Section,
   Button,
   Description,
@@ -25,22 +26,39 @@ const ProjectPage = () => {
   }
 
   return (
+    <>
+    <Button>
+    <FaArrowLeft color="#999" size={20} onClick={() => navigate(-1)} />
+  </Button>
     <Container>
-      <Button>
-        <FaArrowLeft color="#999" size={20} onClick={() => navigate(-1)} />
-      </Button>
+
       <Content>
-        <Section>
+        <Section >
+            <div className="grid gap-2  sm:grid-cols-1 md:grid-cols-2 ">
+
           <div>
  
             <Title className="">{project.title}</Title>
+     <div className="mt-1 mb-3">
+
+     {project.stack.map((tag, index) => (<Stack className="grid gap-2 md:grid-cols-2 "  key={index}    tag={tag.stack}                >
+            {tag}
+         </Stack>
+) 
+         )} 
+     </div>
+    
+
             <Description className="">{project.description}</Description>
           </div>
 
-      
+
           <CardImage src={project.imageUrl} alt={project.title} />
-          
+          </div>
+          <div>
           <Link className="w-full flex  justify-center my-5" to={project.link}   target="_blank" >Preview</Link>
+          </div>
+       
         </Section>
         <hr className="mb-4" />
 
@@ -64,6 +82,7 @@ const ProjectPage = () => {
         })}
       </Content>
     </Container>
+    </>
   );
 };
 
@@ -89,7 +108,7 @@ const TwoColumnImages = ({ images }) => (
 
 const CenteredImage = ({ image }) => (
   <div className="flex justify-center mb-8">
-    <img src={image} alt="" className="w-full md:w-2/3 h-auto bg-gray-300" />
+    <img src={image} alt="" className="w-full  h-auto object-cover " />
   </div>
 );
 

@@ -2,15 +2,21 @@
     {
         "id": 1,
         "title": "Nivelamento Online",
-        "description": "Vuetify",
+        "stack": ["Vuetify", "JAVA"],
+        "description": "Nivelamento Online é uma platafomra de ensino gamificada com ambiente de gerenciamento de conteúdo(professor) e de atividades (aluno)",
         "imageUrl": "/p1.png",
         "link": "https://nivelamento-online.com.br/",
         "sections": [
+
             {
-              "type": "text",
-              "title": "Título em H2",
-              "content": "Aqui vai o conteúdo adicional para explicar o projeto."
-            },
+                "type": "text",
+                "title": "Wireframe",
+                "content": ""
+              },
+            {
+                "type": "centeredImage",
+                "image": "/nio/wireframe.png"
+              },
             {
               "type": "twoImages",
               "images": [
@@ -20,7 +26,7 @@
             },
             {
               "type": "centeredImage",
-              "image": "/path/to/image3.jpg"
+              "image": "/nio/bancodequestoes.png"
             },
             {
               "type": "text",

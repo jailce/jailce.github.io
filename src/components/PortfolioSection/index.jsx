@@ -8,6 +8,7 @@ import {
   Content,
   Section,
   Title,
+  CardStack 
 
 } from './styles';
 
@@ -31,7 +32,16 @@ const PortfolioSection = () => {
           <Card 
             key={project.id}
             title={project.title}
-            description={project.description}
+
+            tag={
+              project.stack ? project.stack.map((tag, index) => (
+                <CardStack  key={index} className="">
+                  {tag}
+                </CardStack >
+              )) : null
+            }
+
+          
             imageUrl={project.imageUrl}
             link={project.link}
             onClick={() => handleCardClick(project.id)}

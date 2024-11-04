@@ -19,12 +19,12 @@ import {
 const HeroSection = () => {
   const isMdOrLarger = useMediaQuery({ query: '(min-width: 768px)' });
   return (
-    <Container>
+    <Container className="p-0 h-full">
    
 
 
 
-      <Content className="flex flex-col sm:flex-row">
+      <Content className="flex flex-col sm:flex-row md:p-0 ">
     
         {isMdOrLarger ? (     
           <>
@@ -42,9 +42,9 @@ const HeroSection = () => {
         <Section>
           <ProfileImage src="./profile.png" alt="Profile" />
           <SocialIcons>
-            <FaGithub className="icon" />
-            <FaBehance className="icon" />
-            <FaWhatsapp className="icon" />
+            <FaGithub className="icon-gh " />
+            <FaBehance  className="icon  bg-blue-600" />
+            <FaWhatsapp className="icon  bg-green-600" />
           </SocialIcons>
           <Description>
             Profissional diferenciada que pode entregar produtos responsivos,
@@ -93,9 +93,9 @@ const HeroSection = () => {
 
           <ProfileImage src="./profile.png" alt="Profile" />
           <SocialIcons>
-            <FaGithub className="icon" />
-            <FaBehance className="icon" />
-            <FaWhatsapp className="icon" />
+            <FaGithub className="icon-gh" />
+            <FaBehance className="icon bg-blue-600" />
+            <FaWhatsapp className="icon bg-green-600" />
           </SocialIcons>
           <Description>
             Profissional diferenciada que pode entregar produtos responsivos,

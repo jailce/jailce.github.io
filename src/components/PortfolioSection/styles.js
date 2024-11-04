@@ -57,3 +57,16 @@ export const Description = styled.p`
   line-height: 1.4;
 `;
 
+export const CardStack = styled.p`
+  display: inline-block;         /* Ajusta a largura automaticamente ao conteúdo */
+  font-size: 0.7rem;
+  line-height: normal;
+  font-weight: 600;
+  color: #10438F;
+  margin: 0;
+  background-color:  #B9D3FA  ;
+  border: 1px solid #10438F;
+  border-radius: 50px;
+  padding: 0.08rem 0.45rem;
+  margin-right: 0.5rem;
+`;

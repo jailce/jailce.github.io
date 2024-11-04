@@ -31,7 +31,7 @@ const App = () => {
           element={
             <>
               <HeroSection />
-              <Divider />
+           
               <PortifolioSection />
             </>
           }  />
