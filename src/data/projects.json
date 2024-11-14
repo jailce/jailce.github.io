@@ -1,56 +1,107 @@
 [
     {
         "id": 1,
+        "isComingSoon": false,
         "title": "Nivelamento Online",
-        "stack": ["Vuetify", "JAVA"],
+        "stack": [
+            "Vuetify",
+            "JAVA"
+        ],
         "description": "Nivelamento Online é uma platafomra de ensino gamificada com ambiente de gerenciamento de conteúdo(professor) e de atividades (aluno)",
         "imageUrl": "/p1.png",
         "link": "https://nivelamento-online.com.br/",
         "sections": [
-
             {
                 "type": "text",
                 "title": "Wireframe",
                 "content": ""
-              },
+            },
             {
                 "type": "centeredImage",
                 "image": "/nio/wireframe.png"
-              },
-            {
-              "type": "twoImages",
-              "images": [
-                "/path/to/image1.jpg",
-                "/path/to/image2.jpg"
-              ]
             },
             {
-              "type": "centeredImage",
-              "image": "/nio/bancodequestoes.png"
+                "type": "text",
+                "title": "Ambiente do Aluno",
+                "content": "Ambiente do aluno com visualização de videos, ranking, graficos de desempenho e assistente de IA"
             },
             {
-              "type": "text",
-              "title": "Outro Título em H2",
-              "content": "Outro bloco de texto explicativo."
+                "type": "twoImages",
+                "images": [
+                    "/nio/appnio.png",
+                    "/nio/chatIA2.png"
+                ]
+            },
+     
+            {
+                "type": "text",
+                "title": "Ambiente do professor",
+                "content": "Ambiente do professor onde pode adicionar alunos, criar salas e inserir contéudo com a ajuda de assistente de IA"
+            },
+
+            {
+                "type": "centeredImage",
+                "image": "/nio/bancodequestoes.png"
             }
-          ]
+        ]
     },
     {
         "id": 2,
-        "title": "Calculadora de Investimento",
+        "isComingSoon": false,
+        "title": "WNT Gestora Financeira",  
+        "stack": [
+            "Design System",
+            "JAVA"
+        ],
         "description": "React.JS",
         "imageUrl": "p2.png",
-        "link": "/projeto/calculadora-investimento"
+        "link": "/projeto/calculadora-investimento",
+        "sections": [
+            {
+                "type": "text",
+                "title": "Wireframe",
+                "content": ""
+            },
+            {
+                "type": "centeredImage",
+                "image": "/nio/wireframe.png"
+            },
+            {
+                "type": "text",
+                "title": "Ambiente do Aluno",
+                "content": "Ambiente do aluno com visualização de videos, ranking, graficos de desempenho e assistente de IA"
+            },
+            {
+                "type": "twoImages",
+                "images": [
+                    "/nio/appnio.png",
+                    "/nio/chatIA2.png"
+                ]
+            },
+     
+            {
+                "type": "text",
+                "title": "Ambiente do professor",
+                "content": "Ambiente do professor onde pode adicionar alunos, criar salas e inserir contéudo com a ajuda de assistente de IA"
+            },
+
+            {
+                "type": "centeredImage",
+                "image": "/nio/bancodequestoes.png"
+            }
+        ]
     },
     {
         "id": 3,
-        "title": "WNT Gestora Financeira",
+        "isComingSoon": true,
+        "title": "Calculadora de Investimento",
         "description": "Design System",
         "imageUrl": "p2.png",
         "link": "/projeto/wnt-gestora"
     },
     {
         "id": 4,
+        "isComingSoon": true,
         "title": "Design White Label",
         "description": "Figma",
         "imageUrl": "p4.png",
@@ -58,6 +109,7 @@
     },
     {
         "id": 5,
+        "isComingSoon": true,
         "title": "Simulado CPA-20",
         "description": "React.JS",
         "imageUrl": "p2.png",
@@ -65,10 +117,12 @@
     },
     {
         "id": 6,
+        "isComingSoon": true,
         "title": "Quiz com Ranking",
         "description": "React.JS",
         "imageUrl": "p2.png",
         "link": "/projeto/quiz-ranking"
+        
+        
     }
-    
 ]

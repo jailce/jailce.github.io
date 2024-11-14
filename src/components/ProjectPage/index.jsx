@@ -1,5 +1,5 @@
 // src/components/ProjectPage.js
-import React from "react";
+import React, {useEffect} from "react";
 import projects from "../../data/projects.json";
 import { FaArrowLeft,  FaArrowRight } from "react-icons/fa6";
 import { useNavigate, useParams } from "react-router-dom";
@@ -16,9 +16,16 @@ import {
 } from "./styles";
 
 const ProjectPage = () => {
-  const navigate = useNavigate();
 
   const { projectId } = useParams();
+
+  const navigate = useNavigate();
+
+
+  useEffect(()=> { window.scrollTo(0,0);}, [projectId])
+
+
+
   const project = projects.find((proj) => proj.id === parseInt(projectId));
 
   if (!project) {

@@ -61,6 +61,7 @@ export const Stack = styled.p`
   padding: 0.2rem 0.8rem;
   margin-right: 0.5rem;
 `;
+
 export const Description = styled.p`
   font-size: 1.2wv;
   line-height: normal;

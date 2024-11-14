@@ -2,6 +2,7 @@
     {
         "id": 1,
         "title": "Nivelamento Online",
+        "stack": "",
         "description": "Vuetify",
         "imageUrl": "/p1.png",
         "link": "https://nivelamento-online.com.br/",

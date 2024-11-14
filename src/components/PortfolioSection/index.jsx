@@ -27,12 +27,12 @@ const PortfolioSection = () => {
       <Title>Alguns dos meus últimos trabalhos</Title>
       <Section>
 
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 " >
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3 "  >
         {projects.map((project) => (
           <Card 
             key={project.id}
             title={project.title}
-
+         
             tag={
               project.stack ? project.stack.map((tag, index) => (
                 <CardStack  key={index} className="">
@@ -40,11 +40,12 @@ const PortfolioSection = () => {
                 </CardStack >
               )) : null
             }
-
-          
+            isComingSoon={project.isComingSoon} 
+       
             imageUrl={project.imageUrl}
             link={project.link}
             onClick={() => handleCardClick(project.id)}
+            
           />
         ))}
 

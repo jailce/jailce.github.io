@@ -10,7 +10,7 @@ text-align: center;
   padding: 0 16px;
   position: relative;
  
-  border-radius: 0 0 100px 100px;
+  border-radius: 0 0 60px 60px;
   display: flex;
 
   min-height: 580px;
@@ -69,7 +69,7 @@ export const SkillsList = styled.ul`
 `;
 
 export const ProfileImage = styled.img`
-  width: 180px;
+  width: 240px;
   height: auto;
   border-radius: 10%;
 margin: 0 auto;

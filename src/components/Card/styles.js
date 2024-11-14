@@ -2,11 +2,12 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  background-color: #DEE8F8;
+  background-color: #fff;
+  position: relative;
   border-radius: 2rem;
   padding: 15px;
   text-align: center;
-  border: 1px solid #C4CFE0;
+  border: 1px solid #C4CFE050;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.2s;
   /* flex: 1; */
@@ -15,14 +16,52 @@ export const CardContainer = styled.div`
   &:hover {
     transform: scale(1.05);
   }
-`;
 
+  &.disabled {
+
+ opacity: 0.8;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #C4CFE050;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1);
+  }
+}
+`;
+export const CardImageContainer = styled.div`
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+
+  &.isComming::after {
+    content: 'em breve';
+    display: flex;
+    justify-content: center;
+color: #fff;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000050;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+`;
 export const CardImage = styled.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
   object-position: top center;
   border-radius: 1.2rem;
+  
+  position: relative;
+
+ 
 `;
 
 export const CardTitle = styled.h3`
