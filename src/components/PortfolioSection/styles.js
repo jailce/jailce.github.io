@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 
   text-align: center;
-  color: #333;
+  color: #fbfbfb;
 
   
   position: relative;
@@ -69,4 +69,13 @@ export const CardStack = styled.p`
   border-radius: 50px;
   padding: 0.08rem 0.45rem;
   margin-right: 0.5rem;
+`;
+
+
+export const Link = styled.a`
+  margin-top: 20px;
+  color: #555;
+  max-width: 400px;
+  font-size: 0.9em;
+  line-height: 1.4;
 `;

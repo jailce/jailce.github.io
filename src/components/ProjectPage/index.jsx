@@ -63,7 +63,7 @@ const ProjectPage = () => {
           <CardImage src={project.imageUrl} alt={project.title} />
           </div>
           <div>
-          <Link className="w-full flex  justify-center my-5" to={project.link}   target="_blank" >Preview</Link>
+          <Link className="  btn-pv" to={project.link}   target="_blank" >Live Preview</Link>
           </div>
        
         </Section>

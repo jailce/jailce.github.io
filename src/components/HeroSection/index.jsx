@@ -57,9 +57,10 @@ const HeroSection = () => {
           <Title>UX</Title>
           <Subtitle>Product Designer</Subtitle>
           <SkillsList>
+            <li>Discovery</li>
             <li>Wireframes</li>
             <li>Design System</li>
-            <li>Responsividade</li>
+    
           </SkillsList>
         </SectionUX></>) : 
         (  <>  

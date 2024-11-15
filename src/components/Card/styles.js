@@ -2,17 +2,23 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  background-color: #fff;
+  /* background-color: transparent; */
   position: relative;
-  border-radius: 2rem;
+
   padding: 15px;
   text-align: center;
-  border: 1px solid #C4CFE050;
+  /* border: 1px solid; */
+  /* border-image-slice: 1;
+  border-image-source: linear-gradient(268deg, #24A1CA 2.38%, #8764D4 98.75%); */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+ 
+
+  background: linear-gradient(#111319, #111319) padding-box,
+              linear-gradient(to right,  #8764D4 , #24A1CA ) border-box;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+
   transition: transform 0.2s;
-  /* flex: 1; */
-
-
   &:hover {
     transform: scale(1.05);
   }
@@ -22,6 +28,8 @@ export const CardContainer = styled.div`
  opacity: 0.8;
   padding: 15px;
   text-align: center;
+  background: linear-gradient(#111319, #111319) padding-box,
+  linear-gradient(to right,  #000 , #555 ) border-box;
   border: 1px solid #C4CFE050;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.2s;
@@ -34,7 +42,7 @@ export const CardImageContainer = styled.div`
   width: 100%;
   height: 200px;
   position: relative;
-  border-radius: 1.2rem;
+  border-radius: 0.2rem;
   overflow: hidden;
 
   &.isComming::after {
@@ -57,7 +65,7 @@ export const CardImage = styled.img`
   height: 200px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 1.2rem;
+  border-radius: 0.2rem;
   
   position: relative;
 
@@ -65,9 +73,9 @@ export const CardImage = styled.img`
 `;
 
 export const CardTitle = styled.h3`
-  color: #28446B;
+  color: #fbfbfb;
   text-align: left;
-  margin: 16px 0 0 0 ;
+  margin: 16px 0 14px 0 ;
 `;
 
 export const CardDescription = styled.p`
