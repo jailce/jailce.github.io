@@ -18,6 +18,29 @@ import {
 
 const HeroSection = () => {
   const isMdOrLarger = useMediaQuery({ query: '(min-width: 768px)' });
+
+  const socialNetwork = [
+    {
+      name:'Github',
+      icon:   <FaGithub className="icon-gh" />,
+      url:'https://github.com/jailce'
+
+    },
+
+    {
+      name:'Behance',
+      icon:<FaBehance className="icon bg-blue-600"/>,
+      url:'https://www.behance.net/jailce'
+
+    },
+    {
+      name:'Whatsapp',
+      icon:     <FaWhatsapp className="icon bg-green-600" />,
+      url:'https://api.whatsapp.com/send?phone=5534993000828'
+
+    }
+  ]
+
   return (
     <Container className="p-0 h-full">
    
@@ -42,9 +65,20 @@ const HeroSection = () => {
         <Section>
           <ProfileImage src="./profile.png" alt="Profile" />
           <SocialIcons>
-            <FaGithub className="icon-gh " />
-            <FaBehance  className="icon  bg-blue-600" />
-            <FaWhatsapp className="icon  bg-green-600" />
+          <div className="flex space-x-2" >
+{socialNetwork.map((x)=>
+  <a href={x.url}     target="_blank">{x.icon}</a>
+
+
+
+
+)}
+
+         
+         
+          
+            </div>
+
           </SocialIcons>
           <Description>
             Profissional diferenciada que pode entregar produtos responsivos,
@@ -94,9 +128,17 @@ const HeroSection = () => {
 
           <ProfileImage src="./profile.png" alt="Profile" />
           <SocialIcons>
-            <FaGithub className="icon-gh" />
-            <FaBehance className="icon bg-blue-600" />
-            <FaWhatsapp className="icon bg-green-600" />
+            <div 
+          className="flex space-x-2" >
+           {socialNetwork.map((x)=>
+             <a href={x.url}     target="_blank">{x.icon}</a>
+           
+           
+           
+           
+           )}
+            </div>
+          
           </SocialIcons>
           <Description>
             Profissional diferenciada que pode entregar produtos responsivos,
